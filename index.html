@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdvertentBot</title>
+<meta name="robots" content="index, follow">
+<style>
+  body { margin: 0; background: #000; color: #d4d4d4; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Inter", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 20px; }
+  h1 { color: #fff; font-size: 24px; margin: 0 0 8px; }
+  h2 { color: #fff; font-size: 16px; margin: 32px 0 8px; }
+  p, li { color: #d4d4d4; }
+  .muted { color: #9a9a9a; font-size: 14px; }
+  code, pre { font-family: ui-monospace, Menlo, monospace; font-size: 14px; }
+  pre { background: #0a0a0a; border: 1px solid #2a2a2a; padding: 12px 14px; border-radius: 6px; overflow-x: auto; color: #fff; }
+  a { color: #fff; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AdvertentBot</h1>
+  <p class="muted">User agent: <code>AdvertentBot/1.0</code></p>
+
+  <h2>What it does</h2>
+  <p>AdvertentBot reads public product information from Indian apparel brands' websites for Advertent, a discovery app that helps people find homegrown brands. Every product shown in Advertent links back to the brand's own website, where the purchase happens. Advertent never sells products.</p>
+
+  <h2>What it collects</h2>
+  <ul>
+    <li>Product facts: name, price, sizes, stock, category, product page URL and image URLs.</li>
+    <li>Public brand information and links to return and shipping policies.</li>
+  </ul>
+  <p>It does not store product descriptions or image files, and it never accesses login, cart or checkout pages.</p>
+
+  <h2>How it behaves</h2>
+  <ul>
+    <li>Respects <code>robots.txt</code>, including <code>Crawl-delay</code>.</li>
+    <li>Makes at most one request every 2 seconds per website.</li>
+    <li>Stops on any block, CAPTCHA or access-denied response. It does not use proxies to get around blocks.</li>
+  </ul>
+
+  <h2>How to opt out</h2>
+  <p>Add this to your site's <code>robots.txt</code>:</p>
+<pre>User-agent: AdvertentBot
+Disallow: /</pre>
+  <p>Changes are picked up on the next visit.</p>
+
+  <h2>Contact and removal requests</h2>
+  <p>To ask for your brand's content to be removed or corrected, email <a href="mailto:advertentshop@gmail.com">advertentshop@gmail.com</a>. We acknowledge requests within 24 hours and act within 72 hours.</p>
+</main>
+</body>
+</html>
